@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #141414;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    color: #fafafa;
+}
+nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fafafa;
+    padding: 0 4%;
+    position: fixed;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 10%, transparent);
+}
+.navb {
+    gap: 20px;
+    color: #e5e5e5;
+    font-size: 14px;
+    display: flex;
+    flex: 1;
+    margin-left: 25px;
+}
+.navb p {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.navb p:hover {
+    color: #b3b3b3;
+}
+.navb .H {
+    color: #fff;
+    font-weight: bold;
+}
+.navr {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav img {
+    height: 30px;
+}
+.hero {
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+.videoContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.videoContainer video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(70deg, rgba(0,0,0,0.8), transparent);
+    padding-left: 4%;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overlay h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.secondtext {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.secondtext span {
+    font-weight: bold;
+}
+.thirdtext {
+    font-size: 1.1rem;
+    width: 35%;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+.button-group button {
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.button-group button i {
+    font-size: 1.3rem;
+}
+.button-group .glass {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+.button-group .glass:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+.PopularVid {
+    width: 100%;
+    margin-bottom: 40px;
+    padding-left: 4%;
+    position: relative;
+    z-index: 10;
+}
+.PopularVid:first-of-type {
+    margin-top: -100px;
+}
+.PopularVid h1 {
+    font-size: 1.4vw;
+    margin-bottom: 10px;
+    color: #e5e5e5;
+}
+.videosct {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    padding: 10px 0;
+}
+.videosct::-webkit-scrollbar {
+    display: none;
+}
+.videos {
+    min-width: 250px;
+    height: 140px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.videos:hover {
+    transform: scale(1.08);
+}
+.videos img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
